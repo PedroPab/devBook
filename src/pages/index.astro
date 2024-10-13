@@ -28,7 +28,12 @@ console.log("hello word");
 									href={`/libro/${slug}`}
 									class="mb-2 xl:mb-0 transition hover:scale-110"
 								>
-									<img src={img} alt={title} class="mr-5 w-48  rounded-lg" />
+									<img
+										transition:name={`img-${slug}`}
+										src={img}
+										alt={title}
+										class="mr-5 w-48  rounded-lg"
+									/>
 								</a>
 
 								<div class="flex flex-col justify-center">
